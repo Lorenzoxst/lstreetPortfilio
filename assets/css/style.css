@@ -113,14 +113,18 @@ nav {
 
 .justify-space-between {
     justify-content: space-between;
+    align-items: center;
 }
 
 .justify-space-around {
     justify-content: space-around;
+    align-items: center;
 }
 
 .justify-center {
     justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 
 .row {
@@ -137,9 +141,10 @@ main {
 /* hero */
 .hero {
     display: flex;
-    align-items: center;
     padding: 5rem 0;
     height: 65rem;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .hero img {
@@ -154,11 +159,10 @@ main {
 /* about me */
 .about-me {
     display: flex;
-    text-align: center;
-    align-items: center;
     padding: 5rem 0;
     width: 70%;
     margin: 0 auto;
+    height: 35rem;
 }
 
 .about-me p {
@@ -172,17 +176,16 @@ main {
 /* portfolio */
 #featured {
     height: 400px;
-    flex: 1 0 40%;
+    flex: 1 0 80%;
+    max-width: 75%;
 }
 .portfolio h3 {
-    flex: 1 0 40%;
+    flex: 1 0 20%;
 }
 
 .portfolio {
     display: flex;
-    align-items: center;
-    text-align: center;
-    width: 88%;
+    width: 70%;
     margin: 0 auto;
     padding: 5rem 0;
 }
@@ -193,4 +196,21 @@ main {
     height: 300px;
     margin: 0 2rem 5rem;
     max-width: 50%;
+}
+/* contact */
+
+.contact {
+    display: flex;
+    padding: 5rem 0;
+    width: 70%;
+    margin: 0 auto;
+    height: 35rem;
+}
+
+.contact p {
+    flex: 1 0 80%;
+}
+
+.contact h3 {
+    flex: 1 0 20%;
 }
