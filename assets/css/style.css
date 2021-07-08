@@ -21,6 +21,8 @@ body {
     /* set body font size to 1.75rem, which is 1.75x more than the font-size of 10px, making it 17.5px  */
     font-size: 1.75rem;
     line-height: 1.5;
+    background: var(--dblue);
+    color: var(--white);
 }
 
 h1,
@@ -61,6 +63,10 @@ h6 {
 
 p {
     margin-bottom: 1rem;
+}
+
+a {
+    color: var(--ocean);
 }
 
 /* container */
@@ -138,6 +144,10 @@ main {
     flex-direction: column;
 }
 
+.section-title {
+    outline: 3px solid var(--white);
+}
+
 /* hero */
 .hero {
     display: flex;
@@ -191,12 +201,60 @@ main {
 }
 .port-card {
     flex: 1 0 33%;
-    border: 1px solid black;
+    outline: 10px solid var(--dblue);
     min-height: 100px;
     height: 300px;
     margin: 0 2rem 5rem;
     max-width: 50%;
 }
+
+
+#featured .port-card-title {
+    position: relative;
+    top: 50%;
+    background: var(--white);
+    width: 20%;
+}
+
+.port-card-title {
+    position: relative;
+    top: 50%;
+    background: var(--white);
+    width: 25%;
+    border: 5px solid var(--ocean);
+    border-left: none;
+}
+
+#featured {
+    background: no-repeat center url(../img/pexels-bithin-raj-2763927.jpg);
+    opacity: 0.5;
+}
+
+#project-1{
+    background: no-repeat center url(../img/pexels-john-cahil-rom-2170473.jpg);
+    opacity: 0.5;
+}
+
+#project-2 {
+    background: no-repeat center url(../img/pexels-matheus-natan-3394939.jpg);
+    opacity: 0.5;
+}
+
+#project-3{
+    background: no-repeat center url(../img/pexels-rodrigo-souza-2531709.jpg);
+    opacity: 0.5;
+}
+
+/* portfolio hovers */
+#featured:hover,
+#project-1:hover,
+#project-2:hover,
+#project-3:hover {
+    opacity: 1;
+    transition: 0.5s ease-in;
+    box-shadow: inset 0px 0px 25px var(--iceblue), 0 0 32px var(--iceblue);
+}
+
 /* contact */
 
 .contact {
