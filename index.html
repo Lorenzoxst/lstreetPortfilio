@@ -10,37 +10,40 @@
 </head>
 <body>
     <div class="container">
-        <header class="row justify-space-between">
-            <h1 class="page-title">Lorenzo Street S</h1>
+        <header class="row justify-space-between nav-bar">
+            <h1 class="page-title"><a href="#hero">Lorenzo Street S</a></h1>
             <nav>
-                <a href="#about">aboutMe</a>
+                <a class="aboutLink" href="#about">aboutMe</a>
                 <a href="#port-start">portfolio</a>
                 <a href="#contact">reachOut</a>
             </nav>
         </header> <!-- row justify-space-between -->
 
         <main>
-            <section class="hero row justify-space-around center">
+            <section class="hero row justify-space-around center" data-display="show" id="hero">
                 <figure>
                     <img src="./assets/img/lstreet.jpg" alt="a picture of the magnanimous Lorenzo Street-S">
                 </figure>
-                <h2 class="hero-title center">I am a web developer <br>
+                <div class="center hero-title">
+                    <h2>I am a web developer <br>
                     <span>of sorts</span></h2>
+                    <p>Lorenzo Street, a soon to be bootcamp graduate and code ninja.</p>
+                </div>
             </section><!-- hero row justify-space-around center -->
-
-            <section class="about-me row justify-center center" id="about">
-                <h3 class="section-title">aboutMe</h3>
-                <p>My name is Lorenzo Street-Simmons. I am a pseudo in training junior full-stack developer with some real world experience already. Im currently remote learning out of Birmingham, AL but plan to soon be remote working out of Atlanta, Ga.
-                Im pursing this career because I love to create, and I think that this medium is the best one for me. Someone out there is going to want to see the crazy wonderful stuff in my head.</p>
+                    
+            <section class="about-me column justify-center center" data-display="hide" id="about">
+                        <h3 class="section-title">aboutMe</h3>
+                        <p>My name is Lorenzo Street-Simmons. I am a pseudo in training junior full-stack developer with some real world experience already. Im currently remote learning out of Birmingham, AL but plan to soon be remote working out of Atlanta, Ga.
+                            Im pursing this career because I love to create, and I think that this medium is the best one for me. Someone out there is going to want to see the crazy wonderful stuff in my head.</p>
             </section><!-- about-me row justify-center center -->
-
-            <section class="portfolio row justify-center center" id="port-start">
+                        
+            <section class="portfolio row justify-center center" data-display="hide" id="port-start">
                 <h3 class="section-title">portfolio</h3>
                 
                 <div class="port-card" id="featured">
-                    <div class="port-card-title"><a href="#">
-                        <h4>Project 1</h4>
-                        <p>medium</p>
+                    <div class="port-card-title">
+                        <h4><a href="https://larafoster.github.io/NYT-Bestsellers/">NYT-Bestsellers</a></h4>
+                        <p><a href="https://github.com/larafoster/NYT-Bestsellers">Deployed App</a></p>
                     </a></div><!--port-card-title -->
                     <figure>
                         
@@ -48,45 +51,50 @@
                 </div><!--port-card featured -->
 
                 <div class="port-card" id="project-1">
-                    <div class="port-card-title"><a href="#">
-                        <h4>Project 1</h4>
-                        <p>medium</p>
-                    </a></div><!--port-card-title -->
+                    <div class="port-card-title">
+                        <h4><a href="https://github.com/Lorenzoxst/generateReadMe">Read Me Generator</h4>
+                        <p>Uses Node, JS</p></a>
+                    </div><!--port-card-title -->
                     <figure>
 
                     </figure>
                 </div><!--port-card project-1 -->
 
                 <div class="port-card" id="project-2">
-                    <div class="port-card-title"><a href="#">
-                        <h4>Project 1</h4>
-                        <p>medium</p>
-                    </a></div><!--port-card-title -->
+                    <div class="port-card-title">
+                        <h4><a href="https://lorenzoxst.github.io/passwordGenerator/">Password Generator</a></h4>
+                        <p><a href="https://github.com/Lorenzoxst/passwordGenerator">Deployed App</a></p>
+                    </div><!--port-card-title -->
                     <figure>
 
                     </figure>
                 </div><!--port-card project-2 -->
 
                 <div class="port-card" id="project-3">
-                    <div class="port-card-title"><a href="#">
-                        <h4>Project 1</h4>
-                        <p>medium</p>
-                    </a></div><!--port-card-title -->
+                    <div class="port-card-title">
+                        <h4><a href="https://lorenzoxst.github.io/jsQuiz/">JS Quiz Game</a></h4>
+                        <p><a href="https://github.com/Lorenzoxst/jsQuiz">Deployed App</a></p>
+                    </div><!--port-card-title -->
                     <figure>
 
                     </figure>
                 </div><!--port-card project-3 -->           
             </section> <!-- portfolio row justify-center center" port-start-->
 
-            <section class="contact row justify-center center" id="contact">
+            <section class="contact column justify-center center" data-display="hide" id="contact">
                 <h3 class="section-title">reachOut</h3>
                 <p>Want to reach out? Whether you want to work together, have some awesome idea and need an awesome coder. Or just want to talk video games and how loot boxes, scalpers, and mining is ruining all the fun, feel free to email me at <a href="mailto:lorenzo.streetsimmons@gmail.com">lorenzo.streetsimmons@gmail.com</a>. </p>
             </section><!--contact row justify-center center contact -->
             
             <footer class="center">
-                <p>Copyright</p>
+                <div class="row">
+                    <a href="https://www.linkedin.com/in/lorenzo-street-simmons-65098a82/">Linkedin</a>
+                    <a href="https://github.com/Lorenzoxst">GitHub</a>
+                </div>
             </footer><!--center -->
         </main>
     </div><!--container-->
+
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
